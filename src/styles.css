@@ -1,6 +1,55 @@
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+  color: #2f2e41;
+}
+
+.card {
+  text-align: center;
+}
+
+.weather-app {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  border: 3px solid #f2f2f2;
+  border-radius: 10px;
+  font-family: "Montserrat";
+}
+
+.city-element {
+  font-size: 40px;
+  color: #ff6584;
+  font-weight: bold;
+}
+.temperature-element {
+  text-align: right;
+}
+
+.current-temp {
+  font-size: 60px;
+  font-weight: bolder;
+  color: #f9a826;
+}
+.fahrenheit-link {
+  font-size: 16px;
+}
+.humidity,
+.windspeed,
+.condition-element {
+  color: #2f2e41;
+  font-size: 16px;
+}
+
+.humidity-element,
+.windspeed-element {
+  font-weight: bold;
+}
+
 .fa-sun {
   color: #ff6584;
+  font-size: 36px;
 }
 .sunny-image {
-  width: 80%;
+  width: 100%;
 }
