@@ -19,8 +19,9 @@ h1 {
   font-weight: bold;
 }
 .temperature-element {
-  text-align: right;
+  text-align: center;
 }
+
 .btn {
   background-color: #ffff;
   border: 1px #2f2e41 solid;
@@ -55,6 +56,9 @@ h1 {
 .condition-element {
   color: #2f2e41;
   font-size: 14px;
+}
+
+.humidity-element {
 }
 
 .current-data {
