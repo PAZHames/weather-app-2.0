@@ -4,10 +4,6 @@ h1 {
   color: #2f2e41;
 }
 
-.card {
-  text-align: center;
-}
-
 .weather-app {
   max-width: 900px;
   margin: 60px auto;
@@ -25,6 +21,26 @@ h1 {
 .temperature-element {
   text-align: right;
 }
+.btn {
+  background-color: #ffff;
+  border: 1px #2f2e41 solid;
+  color: #2f2e41;
+  font-weight: bold;
+  padding: 10px 30px;
+  box-shadow: 2px 2px 2px #2f2e41;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #2f2e41;
+  color: #ffff;
+  border: 1px #2f2e41;
+}
+
+#exampleInputEmail1 {
+  border: 1px #2f2e41 solid;
+  box-shadow: 2px 2px 2px #f2f2f26b;
+}
 
 .current-temp {
   font-size: 60px;
@@ -38,18 +54,34 @@ h1 {
 .windspeed,
 .condition-element {
   color: #2f2e41;
-  font-size: 16px;
+  font-size: 14px;
+}
+
+.current-data {
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
 }
 
 .humidity-element,
-.windspeed-element {
+.windspeed-element,
+.forecast-temp {
   font-weight: bold;
 }
 
 .fa-sun {
   color: #ff6584;
   font-size: 36px;
+  padding: 10px;
 }
 .sunny-image {
-  width: 100%;
+  width: 95%;
+  padding-top: 30px;
+}
+.card {
+  text-align: center;
+}
+
+.source-code {
+  padding-top: 30px;
 }
