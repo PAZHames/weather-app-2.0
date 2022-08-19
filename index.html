@@ -11,6 +11,7 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <script
       src="https://kit.fontawesome.com/12dba43550.js"
@@ -49,15 +50,17 @@
           </div>
         </div>
         <div class="row current-data">
-          <div class="col-2">
+          <div class="col-4">
             <div class="city-element">City</div>
             <div class="condition-element">Cloudy</div>
           </div>
-          <div class="col-7">
+          <div class="col-5">
             <div class="row temperature-element">
-              <div class="col-10"><div class="current-temp">12 °C</div></div>
-              <div class="col-2">
-                <a href="fahrenheit-link" class="fahrenheit-link">| F</a>
+              <div class="col-10">
+                <div class="current-temp">
+                  12 °C&nbsp;
+                  <a href="fahrenheit-link" class="fahrenheit-link">| F</a>
+                </div>
               </div>
             </div>
             <div class="row humidity">
@@ -69,7 +72,6 @@
               <div class="col-6 windspeed-element">3mph</div>
             </div>
           </div>
-
           <div class="col-3">
             <div class="weather-image">
               <img

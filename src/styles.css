@@ -14,12 +14,12 @@ h1 {
 }
 
 .city-element {
-  font-size: 40px;
+  font-size: 60px;
   color: #ff6584;
   font-weight: bold;
 }
 .temperature-element {
-  text-align: center;
+  text-align: left;
 }
 
 .btn {
@@ -58,6 +58,10 @@ h1 {
   font-size: 14px;
 }
 
+.humidity,
+.windspeed {
+  text-align: left;
+}
 .humidity-element {
 }
 
@@ -78,8 +82,8 @@ h1 {
   padding: 10px;
 }
 .sunny-image {
-  width: 95%;
   padding-top: 30px;
+  width: 100%;
 }
 .card {
   text-align: center;
