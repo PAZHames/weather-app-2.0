@@ -46,10 +46,18 @@ function displayWeather(response) {
   );
 }
 
-//function enterCity(city) {
-let apiKey = "49c1fd21e6977b5bebe55ea0fd25e68a";
-let units = "metric";
-let city = "London";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-axios.get(apiUrl).then(displayWeather);
-//}
+function enterCity(city) {
+  let apiKey = "49c1fd21e6977b5bebe55ea0fd25e68a";
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(displayWeather);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInput = document.querySelector("#city-input");
+  enterCity(cityInput.value);
+}
+
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", handleSubmit);

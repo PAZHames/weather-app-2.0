@@ -17,9 +17,11 @@ h1 {
   font-size: 30px;
   color: #ff6584;
   font-weight: bold;
+  align-items: center;
+  padding-top: 0;
 }
 #icon {
-  width: 30%;
+  max-width: 40%;
 }
 .temperature-element {
   text-align: left;

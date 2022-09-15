@@ -26,20 +26,24 @@
         <div class="row">
           <div class="col-4"><h1>World Weather</h1></div>
           <div class="col-6">
-            <form>
+            <form id="search-form">
               <div class="row">
                 <div class="col">
                   <div class="mb-3">
                     <input
-                      type="text"
+                      type="search"
                       class="form-control"
-                      id="exampleInputEmail1"
+                      id="city-input"
                       aria-describedby="emailHelp"
+                      placeholder="Type a city"
+                      autocomplete="off"
                     />
                   </div>
                 </div>
                 <div class="col">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-primary" value="Search">
+                    Submit
+                  </button>
                 </div>
               </div>
             </form>
@@ -49,16 +53,18 @@
             <button class="btn btn-primary">Current Location</button>
           </div>
         </div>
+
         <div class="row current-data">
-          <div class="col-4">
+          <div class="col-5">
             <div class="row">
+              <img
+                id="icon"
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt="weather-icon"
+              />
               <div id="city-element">City</div>
             </div>
-            <img
-              id="icon"
-              src="http://openweathermap.org/img/wn/10d@2x.png"
-              alt="weather-icon"
-            />
+
             <div class="row">
               <div>Last updated: <span id="date-element">Date</span></div>
             </div>
@@ -67,7 +73,7 @@
             </div>
           </div>
 
-          <div class="col-5">
+          <div class="col-4">
             <div class="row temperature-element">
               <div class="col-10">
                 <span id="current-temp">12</span
