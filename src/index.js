@@ -37,8 +37,9 @@ function displayTemperature(response) {
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
-let apiKey = "49c1fd21e6977b5bebe55ea0fd25e68a";
-let units = "metric";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=singapore&appid=${apiKey}&units=${units}`;
-
-axios.get(apiUrl).then(displayTemperature);
+function enterCity(city) {
+  let apiKey = "49c1fd21e6977b5bebe55ea0fd25e68a";
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(displayWeather);
+}
