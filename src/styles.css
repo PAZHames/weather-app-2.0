@@ -18,6 +18,9 @@ h1 {
   color: #ff6584;
   font-weight: bold;
 }
+#icon {
+  width: 30%;
+}
 .temperature-element {
   text-align: left;
 }
@@ -48,14 +51,14 @@ h1 {
   font-weight: bolder;
   color: #f9a826;
 }
+
 .units {
   font-size: 16px;
   text-decoration: none;
   color: #2f2e41;
 }
 .humidity,
-.windspeed,
-#condition-element {
+.windspeed {
   color: #2f2e41;
   font-size: 14px;
 }
