@@ -77,8 +77,13 @@ h1 {
 
 .humidity,
 .windspeed,
-.forecast-temp {
+.forecast-temp-max {
   font-weight: bold;
+}
+
+.forecast-temp-max,
+.forecast-temp-min {
+  font-size: 12px;
 }
 
 #condition-element {

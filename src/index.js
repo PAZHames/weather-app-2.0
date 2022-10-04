@@ -47,6 +47,32 @@ function displayWeather(response) {
   celsiusTemperature = response.data.main.temp;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thurs", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+            <div class="card">
+              <div class="card-body">
+                <div>${day}</div>
+                <i class="fa-solid fa-sun"></i>
+                <br>
+                <span class="forecast-temp-max">15°</span>
+                <span class="forecast-temp-min">10°</span>
+              </div>
+            </div>
+          </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function enterCity(city) {
   let apiKey = "49c1fd21e6977b5bebe55ea0fd25e68a";
   let units = "metric";
@@ -76,6 +102,7 @@ function displayCelsiusTemperature(event) {
   fahrenheitLink.classList.remove("active");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+displayForecast();
 
 let celsiusTemperature = null;
 
