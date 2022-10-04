@@ -101,3 +101,13 @@ h1 {
 .source-code {
   padding-top: 30px;
 }
+
+.temperature-element .active {
+  color: #2f2e41;
+  cursor: default;
+  font-weight: bold;
+}
+
+.temperature-element .active:hover {
+  text-decoration: none;
+}
