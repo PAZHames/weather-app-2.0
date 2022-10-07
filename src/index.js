@@ -29,8 +29,8 @@ function getForecast(coordinates) {
 }
 
 function displayWeather(response) {
-  let tempertaureElement = document.querySelector("#current-temp");
-  tempertaureElement.innerHTML = Math.round(response.data.main.temp);
+  let temperatureElement = document.querySelector("#current-temp");
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
   let cityElement = document.querySelector("#city-element");
   cityElement.innerHTML = response.data.name;
   let conditionElement = document.querySelector("#condition-element");
@@ -50,7 +50,37 @@ function displayWeather(response) {
     "alt",
     `http://openweathermap.org/img/wn/${response.data.weather[0].description}@2x.png`
   );
-  celsiusTemperature = response.data.main.temp;
+
+  if (response.data.main.temp > 16) {
+    let weatherImage = document.querySelector("#weather-image");
+    weatherImage.innerHTML = `
+      <img
+                src="src/images/undraw_sunny_day_re_gyxr.svg"
+                alt="sunny-image"
+                class="sunny-image weather-image"
+      />
+    `;
+  } else {
+    if (response.data.main.temp < 16 && response.data.main.temp > 0) {
+      let weatherImage = document.querySelector("#weather-image");
+      weatherImage.innerHTML = `
+      <img
+        src="src/images/undraw_winter_road_mcqj.svg"
+        alt="chilly-image"
+        class="chilly-image weather-image"
+      />
+    `;
+    } else {
+      let weatherImage = document.querySelector("#weather-image");
+      weatherImage.innerHTML = `
+      <img
+        src="src/images/undraw_snowman_re_guxt.svg"
+        alt="cold-image"
+        class="cold-image weather-image"
+      />
+    `;
+    }
+  }
 
   getForecast(response.data.coord);
 }

@@ -23,6 +23,10 @@ h1 {
 #icon {
   max-width: 40%;
 }
+
+.forecast-icon {
+  max-width: 70%;
+}
 .temperature-element {
   text-align: left;
 }
@@ -86,6 +90,7 @@ h1 {
 
 #condition-element {
   text-transform: capitalize;
+  padding-bottom: 20px;
 }
 
 .fa-sun {
@@ -93,8 +98,9 @@ h1 {
   font-size: 36px;
   padding: 10px;
 }
-.sunny-image {
+.weather-image {
   padding-top: 30px;
+  padding-bottom: 30px;
   width: 100%;
 }
 .card {
