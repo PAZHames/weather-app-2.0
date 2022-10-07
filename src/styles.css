@@ -13,20 +13,10 @@ h1 {
   font-family: "Montserrat";
 }
 
-#city-element {
-  font-size: 30px;
-  color: #ff6584;
-  font-weight: bold;
-  align-items: center;
-  padding-top: 0;
-}
-#icon {
-  max-width: 40%;
+.card {
+  text-align: center;
 }
 
-.forecast-icon {
-  max-width: 70%;
-}
 .temperature-element {
   text-align: left;
 }
@@ -47,34 +37,22 @@ h1 {
   border: 1px #2f2e41;
 }
 
-#exampleInputEmail1 {
-  border: 1px #2f2e41 solid;
-  box-shadow: 2px 2px 2px #f2f2f26b;
+.weather-image {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
 }
 
-#current-temp {
-  font-size: 60px;
-  font-weight: bolder;
-  color: #f9a826;
-}
-
-.unit {
+.units {
   position: relative;
+  top: -28px;
+  font-size: 20px;
 }
 .humidity,
 .windspeed {
   color: #2f2e41;
   font-size: 14px;
-}
-
-.humidity,
-.windspeed {
   text-align: left;
-}
-
-.current-data {
-  display: flex;
-  align-items: center;
 }
 
 .humidity,
@@ -83,40 +61,53 @@ h1 {
   font-weight: bold;
 }
 
+.current-data {
+  display: flex;
+  align-items: center;
+}
+
+.forecast-day,
+.forecast-temp-max,
+.forecast-temp-min {
+  color: #2f2e41;
+}
+
 .forecast-temp-max,
 .forecast-temp-min {
   font-size: 12px;
 }
 
-#condition-element {
-  text-transform: capitalize;
-  padding-bottom: 20px;
-}
-
-.fa-sun {
-  color: #ff6584;
-  font-size: 36px;
-  padding: 10px;
-}
-.weather-image {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  width: 100%;
-}
-.card {
-  text-align: center;
+.forecast-icon {
+  max-width: 70%;
 }
 
 .source-code {
   padding-top: 30px;
 }
 
-.temperature-element .active {
-  color: #2f2e41;
-  cursor: default;
-  font-weight: bold;
+#exampleInputEmail1 {
+  border: 1px #2f2e41 solid;
+  box-shadow: 2px 2px 2px #f2f2f26b;
 }
 
-.temperature-element .active:hover {
-  text-decoration: none;
+#city-element {
+  font-size: 30px;
+  color: #ff6584;
+  font-weight: bold;
+  align-items: center;
+}
+
+#icon {
+  max-width: 40%;
+}
+
+#current-temp {
+  font-size: 60px;
+  font-weight: bolder;
+  color: #f9a826;
+}
+
+#condition-element {
+  text-transform: capitalize;
+  padding-bottom: 20px;
 }

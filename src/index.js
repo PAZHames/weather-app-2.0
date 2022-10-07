@@ -106,7 +106,7 @@ function displayForecast(response) {
         `<div class="col-2">
             <div class="card">
               <div class="card-body">
-                <div>${formatDay(forecastDay.dt)}</div>
+                <div class="forecast-day">${formatDay(forecastDay.dt)}</div>
                 
                 <img src="http://openweathermap.org/img/wn/${
                   forecastDay.weather[0].icon
