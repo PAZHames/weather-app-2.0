@@ -54,10 +54,8 @@ h1 {
   color: #f9a826;
 }
 
-.units {
-  font-size: 16px;
-  text-decoration: none;
-  color: #2f2e41;
+.unit {
+  position: relative;
 }
 .humidity,
 .windspeed {
